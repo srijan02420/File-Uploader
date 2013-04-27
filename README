@@ -1,0 +1,34 @@
+########################## File_Uploader #########################
+	
+	Author - Srijan Gupta
+	E-Mail - srijan02420@gmail.com
+	
+##################################################################
+
+##### PURPOSE #####
+	The basic purpose of this hack (app) is to upload your 
+		desired to your your desired path on your website.
+	I made this because ftp is not working in my college. So this do not use any file transfer protocol.
+	It just need to be uploaded once in your website.
+	Then it will upload your file anywhere you want in your website directories.
+	You can also create directiories (folder) to upload a file in new folder.
+	It means it just needs one time upload.
+
+##################################################################
+	
+#### INSTALLATION ####
+					1---Just copy the file_uploader.php and style.css to your root folder (ht docs or public html) of your website.
+					2---Run file_uploader.php on your browser (http://www.yourwebsite.com/file_uploader.php).
+					3---Select file to uploaded.
+					4---Make folder in you directories if needed.
+					5---Give path where you want to upload.
+					6---Press Upload and you are done........
+				
+###################################################################				
+				
+#### MODIFICATION ####
+	You can add your filters of file type or size.
+	I didn't done so because I want every file type and of every size to be uploaded. 
+	
+############ HOPE MY WORK HELPED YOU !! FEEL FREE TO CONTACT !! ##############
+	
