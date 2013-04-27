@@ -1,0 +1,67 @@
+/*
+	##### style.css #####
+style.css for file uploader
+ Author: Srijan Gupta
+ email: srijan02420@gmail.com
+*/
+body {
+	background: #EBEBEE;
+	line-height: 1;
+	}
+	
+h2 {
+	text-align: center;
+	font-family:Comic Sans, Comic Sans MS, cursive;
+	color:#3E1935;
+	font-size:35;
+	}
+	
+h3 {
+	text-align: left;
+	margin-left:190px;
+	font-family:Comic Sans, Comic Sans MS, cursive;
+	color:#003B4E;
+	//text-decoration: underline;
+	font-style: italic;
+	}
+	
+#upload,#folder {
+				text-align: left;
+				margin-left:120px;
+				font-family:Impact, fantasy;
+				color:#656573;
+				font-size:15px;
+				}
+.btn {
+	margin-left:120px;
+	font-size:20px;
+	}
+	
+p {
+	font-family:Times, serif;
+	color:red;
+	font-style: italic;
+	}
+	
+#footer {
+		margin-top:180px;
+		text-align:center;
+		font-family:Comic Sans, Comic Sans MS, cursive;
+		font-size:20px;
+		color:#00003D;
+}
+.srijan {
+		display:none;
+		text-align:center;
+		background:#D4D4E2;
+		font-size:12px;
+		}
+#footer:hover .srijan {
+					display:block;
+					}
+#success {
+		font-size:25px;
+		color:#FF0000;
+		margin-left:150px;
+		font-family:Impact, fantasy;
+		}
