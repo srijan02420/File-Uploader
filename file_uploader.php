@@ -1,4 +1,4 @@
-<!-- file uploader: The basic use of this hack is to upload your files to your website without using ftp.
+<!-- file uploader: The basic use of this hack is to upload your files to your website without using ftp client(file transfer protocol).
 
 					#### INSTALLATION ####
 					Just copy the file_uploader.php and style.css to your root folder (ht docs or public html) of your website.
