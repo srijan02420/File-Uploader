@@ -1,12 +1,4 @@
-<!-- file uploader: The basic use of this hack is to upload your files to your website without using ftp client(file transfer protocol).
-
-					#### INSTALLATION ####
-					Just copy the file_uploader.php and style.css to your root folder (ht docs or public html) of your website.
-					Run file_uploader.php on your browser (http://www.yourwebsite.com/file_uploader.php).
-					Select file to uploaded.
-					Make folder in you directories if needed.
-					Give path where you want to upload.
-					Press Upload and you are done........
+<!-- file uploader
  Author: Srijan Gupta
  email: srijan02420@gmail.com
 Feel free to contact -->
@@ -25,7 +17,7 @@ Feel free to contact -->
 				<label for="file">Your File To Be Uploaded:</label>
 				<input type="file" name="file" id="file" /> <br/>
 				
-				<!--Path of file to be uploaded on the server leave it blank if wanna upload it root-->
+				<!--Path of file to be uploaded on the server leave it blank if want to upload it root-->
 				<label for="path">Put Path For Upload:</label>
 				<input type="text" name="path"/>
 				<p>(leave it blank if wanna upload it to root folder)</p>
@@ -37,7 +29,7 @@ Feel free to contact -->
 		<div id="folder">
 			<!--form for making folder-->
 			<form action="#" method="post">
-				<!--Path where you wanna make a new folder -->
+				<!--Path where you want to make a new folder -->
 				<label for="path">Name of New Folder with full path:</label>
 				<input type="text" name="path" value="name with path">
 				
@@ -54,11 +46,11 @@ Feel free to contact -->
 		
 		//cheaking if any file is selected or not
 		if($file==null)
-			{	echo "Atleast select a file Dude !!";	}
+			{	echo "Please select a file!";	}
 			
-		//cheaking if the given path exists or not
+		//cheaking if the given path exist or not
 		else if (!file_exists($path)&&$path!=null)
-			{	echo "This path is invalid folks !!";	}
+			{	echo "Path is invalid!";	}
 			
 		else{
 			//if path left blank it will upload file to root directory
@@ -66,25 +58,25 @@ Feel free to contact -->
 				{
 				//cheaks whether the file already exists
 				if(file_exists($_FILES["file"]["name"]))
-						//if already exists replaces it
-					{	echo "Folks '".$_FILES["file"]["name"]."' replaced !!";	}
+						//if already exist, replace it
+					{	echo "Folks '".$_FILES["file"]["name"]."' replaced!";	}
 				else
-						//if not uploads it
-					{	echo "Folks '".$_FILES["file"]["name"]."' uploaded in the same dir where uploader exists !!";	}
+						//if not upload it
+					{	echo "Folks '".$_FILES["file"]["name"]."' uploaded in the same dir where uploader exists!";	}
 					
 					//uploading file to root directory
 				move_uploaded_file($_FILES["file"]["tmp_name"],$_FILES["file"]["name"]);
 				}
-			//if path given will upload to specified path	
+			//if path given, will upload to specified path	
 			else	
 				{
-				//cheaks whether the file already exists
+				//cheak whether the file already exist
 				if(file_exists($path.'/'.$_FILES["file"]["name"]))
 						//if already exists replaces it
-					{	echo "Folks '/".$path ."/" .$_FILES["file"]["name"]. "' replaced !!";	}
+					{	echo "'/".$path ."/" .$_FILES["file"]["name"]. "' replaced!";	}
 				else
-						//if not uploads it
-					{	echo "Folks file uploaded in '/".$path ."/" .$_FILES["file"]["name"]. "' !!";	}
+						//if not upload it
+					{	echo "File uploaded in '/".$path ."/" .$_FILES["file"]["name"]. "'!";	}
 					
 				//uploading file to specified path
 				move_uploaded_file($_FILES["file"]["tmp_name"],
@@ -102,7 +94,7 @@ Feel free to contact -->
 		
 		//cheaking if there is any name given to folder
 		if($path==NULL)
-			{	echo "Atleast give folder a name Dude !!";	}
+			{	echo "Give folder a name!";	}
 			
 		else{
 			//cheaking whether the folder exist or not
@@ -110,10 +102,10 @@ Feel free to contact -->
 				{
 				//making folder in your specified path
 				mkdir($path, 0700);
-				echo "FOLDER '".$path."' Created :) !!";
+				echo "FOLDER '".$path."' Created :)";
 				}
 			else
-				{ echo "LOL! '".$path."' already exists!!"; }
+				{ echo "'".$path."' already exist!"; }
 			}
 		}	
 ?>
